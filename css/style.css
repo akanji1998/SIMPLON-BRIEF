@@ -1,27 +1,35 @@
-/* RIGHT SIDE STYLE */
+body {
+    background-color: #151C63;
+
+}
+
 #section_one {
     
     display:flex;
     justify-content: center;
-    padding: 35px;
-    background-color: #151C63;
+    margin-bottom: 150px;
+    margin-top: 150px;
+
 }
-#section_one .frame{
+/* RIGHT SIDE STYLE */
+#section_one .right{
     background-color: #151C63;
     display: inline-flex;
-    padding: 5px;
+    /*padding: 5px;*/
 }
-#section_one .right_side {
+
+#section_one .right{
     background-color: #03061B ;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    height: 100%;
-    
 }
+
 #section_one .right_side .right_element {
     border-bottom:0.5px solid #F8F2F2;
     text-align: center;
     padding:35px;
+    position: relative;
+    left:-14px;
 }
 
 #section_one .right_side .right_element .circle{
@@ -50,7 +58,7 @@
 /* RIGHT SIDE STYLE END */
 
 /* lEFT SIDE STYLE START */
-#section_one .left_side {
+#section_one .left {
     background-color: #EBEAF0 ;
     position: relative;
     left: -28px;
@@ -58,8 +66,9 @@
     border-bottom-right-radius: 15px;
     height: 100%;
     padding: 25px;
-    
 }
+
+
 #section_one .left_side .title{
     text-align: center;
     text-transform: capitalize;
