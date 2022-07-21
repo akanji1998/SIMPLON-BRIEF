@@ -1,0 +1,115 @@
+/* RIGHT SIDE STYLE */
+#section_one {
+    
+    display:flex;
+    justify-content: center;
+    padding: 35px;
+    background-color: #151C63;
+}
+#section_one .frame{
+    background-color: #151C63;
+    display: inline-flex;
+    padding: 5px;
+}
+#section_one .right_side {
+    background-color: #03061B ;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 100%;
+    
+}
+#section_one .right_side .right_element {
+    border-bottom:0.5px solid #F8F2F2;
+    text-align: center;
+    padding:35px;
+}
+
+#section_one .right_side .right_element .circle{
+    background-color:#94969A; 
+    width: 50px;
+    height:50px;
+    border-radius: 25px;
+    position: relative;
+    float: left;
+}
+#section_one .right_side .right_element .circle p{
+    position:absolute;
+    top: 12px;
+    left:15px;
+    color: #000;
+    font-weight: bold;
+}
+#section_one .right_side .right_element p{
+    position: relative;
+    top: 12px;
+    left:5px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: left;
+}
+/* RIGHT SIDE STYLE END */
+
+/* lEFT SIDE STYLE START */
+#section_one .left_side {
+    background-color: #EBEAF0 ;
+    position: relative;
+    left: -28px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    padding: 25px;
+    
+}
+#section_one .left_side .title{
+    text-align: center;
+    text-transform: capitalize;
+}
+#section_one .left_side .form_div{
+    margin-top: 25px;
+}
+
+.mod_field{
+    border: 1px solid #C5C3C3;
+    border-radius: 5px;
+    background-color: #FFFDFD;
+    margin-bottom: 35px;
+}
+.mod_field input{
+    border:none;
+    margin-top: 0px;
+    font-weight: 500;
+    color:#000;
+}
+.mod_legend{
+    border:none;
+    width:80px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 15px;
+    color: #9D9C9E;
+    position: relative;
+    bottom:3px;
+}
+
+.reduce_input {
+   /*width: 55%;*/
+    height: 50px;
+    margin-bottom: 35px;
+}
+.dash input{
+    height: 50px;
+    margin-bottom: 35px;
+}
+.bottom_circle {
+
+    background-color:#169340; 
+    width: 50px;
+    height:50px;
+    border-radius: 25px;
+    position: relative;
+    float: right;
+    right: 35px;
+    margin-bottom: 35px;
+    
+
+}
