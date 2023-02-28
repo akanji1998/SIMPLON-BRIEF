@@ -1,20 +1,18 @@
-# Utilisation d'une image de base alpine pour réduire la taille de l'image finale
-FROM akanjiabiola:latest
+# Utilisez une image de base légère avec Node.js préinstallé
+FROM akanjiabiola/app:latest
 
-# Installation du serveur web nginx et des outils nécessaires pour gérer les fichiers HTML
-RUN apk update && apk add nginx && apk add wget && apk add unzip
+# Définissez le répertoire de travail dans le conteneur
+WORKDIR /app
 
-# Suppression du fichier de configuration nginx par défaut
-RUN rm /etc/nginx/conf.d/default.conf
+# Copiez le fichier package.json dans le conteneur
 
-# Copie des fichiers HTML locaux dans l'image Docker
-COPY index.html /var/www/html/
 
-# Copie du fichier de configuration nginx personnalisé dans l'image Docker
-COPY nginx.conf /etc/nginx/conf.d/
 
-# Exposition du port 80 pour permettre l'accès au serveur web depuis l'extérieur du conteneur
+# Copiez tous les fichiers de l'application dans le conteneur
+COPY . .
+
+# Définir le port sur lequel l'application écoutera
 EXPOSE 80
 
-# Commande pour démarrer le serveur web nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Démarrez l'application
+CMD ["npm", "start"]
